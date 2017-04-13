@@ -10,6 +10,7 @@ ROOT_DIR = os.path.dirname(os.path.dirname(os.path.dirname(CURRENT_DIR)))
 
 # TODO: make a proper script to populate the database.
 CORPUS_FILE = "speeches.txt"
-CORPUS_FILE_PATH = os.path.join(ROOT_DIR, "corpus", "presidential16_speeches", CORPUS_FILE)
+CORPUS_FILE_PATH = os.path.join(ROOT_DIR, "corpus", "presidential16_speeches",
+                                CORPUS_FILE)
 
 markovipy_obj = MarkoviPy(CORPUS_FILE_PATH, 3)
