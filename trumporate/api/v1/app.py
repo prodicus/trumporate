@@ -4,7 +4,7 @@
 from flask import Flask
 from flask import jsonify
 
-from .utils import markovipy_obj
+from trumporate.api.v1.utils import markovipy_obj
 
 app = Flask(__name__)
 
