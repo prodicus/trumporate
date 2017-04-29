@@ -1,0 +1,42 @@
+body {
+	background: rgb(220,220,220);
+	font-family: 'Playfair Display', serif;
+	text-align: center;
+}
+
+.gravatar {
+	position: fixed;
+	background: rgb(255,255,255);
+	height: 100px;
+	width: 100px;
+	border-radius: 10px;
+	box-shadow: 10px 10px 20px rgb(200,200,200);
+	margin: 0 auto;
+	left: 28vw;
+	top: 40vh;
+}
+
+.arrow {
+	position: fixed;
+	background: rgb(255,255,255);
+	height: 50px;
+	width: 50px;
+	-ms-transform: rotate(45deg); /* IE 9 */
+    -webkit-transform: rotate(45deg); /* Safari */
+    transform: rotate(45deg);
+	margin: 0 auto;
+	left: 37vw;
+	top: 44vh;
+}
+
+.bubble {
+	position: fixed;
+	background: rgb(255,255,255);
+	height: 100px;
+	width: 500px;
+	border-radius: 10px;
+	box-shadow: 10px 10px 20px rgb(200,200,200);
+	margin: 0 auto;
+	left: 38vw;
+	top: 40vh;
+}
