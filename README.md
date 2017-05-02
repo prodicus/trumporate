@@ -18,7 +18,7 @@ $ git clone git@github.com:/prodicus/trumporate
 $ cd trumporate
 $ mkvirtualenv trumporate --python=/usr/local/bin/python3
 $ pip install -r requirements-dev.txt
-$ make run
+$ make run-test-env
 ```
 
 Open another tab in your terminal
