@@ -1,0 +1,25 @@
+---
+# Get information about the repository whether or not it has
+# already been cloned locally.
+- name: clone/update https://github.com/prodicus/trumporate
+  become: true
+  git:
+    repo: https://github.com/prodicus/trumporate
+    dest: /var/opt/trumporate
+    update: yes
+
+- name: Changing the ownership of trumporate
+  become: true
+  file:
+    dest: /var/opt/trumporate
+    owner: "{{ username }}"
+    group: "{{ username }}"
+    mode: u=rwX,g=rX,o=rX  # cuz you need x bit to cd into a dir
+    recurse: yes
+    # http://stackoverflow.com/a/29793833/3834059
+    # Because X (instead of x) only applies to directories or files with at
+    # least one x bit set.
+
+- name: installing deps from requirements-dev.txt
+  become: true
+  command: pip3 install -r /var/opt/trumporate/requirements-dev.txt

@@ -1,0 +1,13 @@
+---
+- name: installing python3 and nginx
+  apt:
+    name: "{{ item }}"
+    state: latest
+  with_items:
+    - python3-pip
+    - python3-dev 
+    - nginx
+  become: true
+
+- name: Update pip tools
+  command: pip3 install --upgrade pip

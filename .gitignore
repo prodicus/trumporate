@@ -1,5 +1,9 @@
 # Byte-compiled / optimized / DLL files
 
+ansible/site.retry
+ansible/inventory
+ansible/roles/nginx/files/trumporate.nginx-conf
+
 .idea/*
 
 __pycache__/

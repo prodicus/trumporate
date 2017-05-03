@@ -1,0 +1,12 @@
+[Unit]
+Description=Gunicorn instance for trumporate
+After=network.target
+
+[Service]
+User=ubuntu
+Group=www-data
+WorkingDirectory=/var/opt/trumporate
+ExecStart=/usr/local/bin/gunicorn --workers 3 --bind 127.0.0.1:5000 --access-logfile /var/log/trumporate/gunicorn-access.log --error-logfile /var/log/trumporate/gunicorn-error.log trumporate.wsgi:app
+
+[Install]
+WantedBy=multi-user.target

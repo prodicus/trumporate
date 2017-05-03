@@ -1,0 +1,7 @@
+---
+- hosts: trumporate
+  roles:
+    - role: install_packages
+    - role: provision
+    - role: systemd
+    - role: nginx

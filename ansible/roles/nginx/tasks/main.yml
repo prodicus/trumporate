@@ -1,0 +1,24 @@
+---
+- name: Copying the nginx config file for trumporate to /etc/nginx/sites-available/trumporate
+  become: true
+  copy:
+    src: trumporate.nginx-conf
+    dest: /etc/nginx/sites-available/trumporate
+    owner: root
+    group: root
+    mode: u=rw,g=r,o=r
+
+- name: Create a symlink for /etc/nginx/sites-available/trumporate to /etc/nginx/sites-enabled
+  become: true
+  file:
+    src: /etc/nginx/sites-available/trumporate
+    dest: /etc/nginx/sites-enabled/trumporate
+    state: link
+    owner: root
+    group: root
+    mode: u=rwx,g=rwx,o=rwx
+
+- name: Restart nginx
+  become: true
+  shell: |
+    systemctl restart nginx

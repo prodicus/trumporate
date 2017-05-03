@@ -5,11 +5,11 @@ Post random rants by Donald Trump found based on what he has spoken on and aroun
 
 ## TODO
 
-- [x] Create an initial on top of which the UI should be built
+- [x] Expose on API endpoint on top of which the UI should be built
+- [x] Push it to ec2 instance on AWS (sorry Digital Ocean)
 - [ ] Create the UI
 - [ ] Write tests
 - [ ] Shift the frequency generation inside a DB for persistence. The bottleneck as of now
-- [ ] Push it to AWS(sorry Digital Ocean)
 
 ## Running it
 

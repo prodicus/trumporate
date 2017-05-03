@@ -1,0 +1,47 @@
+---
+- name: Create the dir /var/log/trumporate/
+  become: true
+  file:
+    path: /var/log/trumporate/
+    state: directory
+    group: "{{ username }}"
+    owner: "{{ username }}"
+    mode: u=rwX,g=rX,o=rX
+
+# http://stackoverflow.com/a/34929776/3834059
+- name: Creating gunicorn-error.log file (if not already present)
+  become: true
+  copy:
+    content: ""
+    dest: /var/log/trumporate/gunicorn-error.log
+    backup: yes
+    force: no
+    group: "{{ username }}"
+    owner: "{{ username }}"
+    mode: u=rwX,g=rX,o=rX
+
+- name: Creating gunicorn-access.log (if not already present)
+  become: true
+  copy:
+    content: ""
+    dest: /var/log/trumporate/gunicorn-access.log
+    backup: yes
+    force: no
+    group: "{{ username }}"
+    owner: "{{ username }}"
+    mode: u=rwX,g=rX,o=rX
+
+- name: Copy trumporate.service to /etc/systemd/system/
+  become: true
+  copy:
+    src: trumporate.service
+    dest: /etc/systemd/system/trumporate.service
+    mode: u=rw,g=r,o=r
+    owner: root
+    group: root
+
+- name: Start the systemctl service trumporate
+  become: true
+  shell: |
+    systemctl start trumporate
+    systemctl enable trumporate
