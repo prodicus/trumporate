@@ -1,5 +1,5 @@
 body {
-	background: rgb(220,220,220);
+	background: lightblue;
 	font-family: 'Playfair Display', serif;
 	text-align: center;
 }
@@ -10,7 +10,7 @@ body {
 	height: 100px;
 	width: 100px;
 	border-radius: 10px;
-	box-shadow: 10px 10px 20px rgb(200,200,200);
+	box-shadow: 10px 10px 20px rgba(200,200,200,0.5);
 	margin: 0 auto;
 	left: 28vw;
 	top: 40vh;
@@ -35,7 +35,7 @@ body {
 	height: 100px;
 	width: 500px;
 	border-radius: 10px;
-	box-shadow: 10px 10px 20px rgb(200,200,200);
+	box-shadow: 10px 10px 20px rgba(200,200,200,0.5);
 	margin: 0 auto;
 	left: 38vw;
 	top: 40vh;
