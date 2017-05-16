@@ -4,6 +4,9 @@ clean-pyc: ## remove Python file artifacts
 	find . -name '*~' -exec rm -f {} +
 	find . -name '__pycache__' -exec rm -fr {} +
 
+gen-rants: clean-pyc
+	python scripts/generate_rants.py
+
 export FLASK_APP:=trumporate/api/v1/app.py
 run-test-env: clean-pyc
 	flask run --host=0.0.0.0
