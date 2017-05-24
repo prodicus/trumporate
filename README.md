@@ -34,4 +34,7 @@ $ curl -X GET http://localhost:5000/api/v1/trump/rant/
 
 ## License
 
+***If you're using markovipy, please let me know or make a pull
+request adding in your name. :)***
+
 GPLv3
