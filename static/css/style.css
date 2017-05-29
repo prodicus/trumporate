@@ -1,75 +1,52 @@
 body {
-	background: yellow;
-	font-family: 'Permanent Marker', cursive;
-}
-
-.quotes {
-	position: relative;
+	font-family: 'Oswald', sans-serif;
 	text-align: center;
-	top: 150px;
-	height: 90%;
-	width: 90%;
-	margin: 0 auto;
+	background: url("../img/Blackboard_Chalkboard_Wipemarks_UV_CM_1.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	padding: 5%;
 }
 
 h1 {
-	color: rgb(50,50,50);
-	font-size: 300%;
-	-ms-transform: rotate(-2deg);
-	-moz-transform: rotate(-2deg);
-	-o-transform: rotate(-2deg);
-	-webkit-transform: rotate(-2deg);
-	transform: rotate(-2deg);
+	color: lightcoral;
 }
 
-p {
+.quotes {
+	background-color: rgba(255,255,255,0.6);
+	padding: 5%;
+	width: 50%;
+	margin: auto;
+	overflow: scroll;
+}
+
+.quotes h1 {
+	color: black;
+}
+
+.quotes blockquote {
 	text-align: right;
-	font-size: 150%;
-	color: rgb(100,100,100);
 }
 
-.button {
-	position: relative;
-	height: 50px;
-	width: 75px;
-	background: rgba(180,180,180,0.5);
-	box-shadow: -5px 10px 10px rgba(100,100,100,0.5);
-	color: rgb(100,100,100);
-	border-radius: 5px;
+button {
 	display: inline-block;
-	text-align: center;
-	text-decoration: none;
-	margin: 0 auto;
-	padding: 0 10px;
-	padding-top: 20px;
-	-ms-transition-duration: 0.5s;
-	-mox-transition-duration: 0.5s;
-	-o-transition-duration: 0.5s;
-	-webkit-transition-duration: 0.5s;
-	transition-duration: 0.5s;
+	height: 20%;
+	width: 30%;
+	margin: auto;
+	background: rgba(0,0,0,0);
+	border: solid 1px lightcoral;
+	transition-duration: 2s;
 }
 
-.button:hover {
-	box-shadow: 0 5px 5px rgba(100,100,100,0.5);
-	background: rgba(150,150,150,0.5);
-	color: rgb(250,250,250);
+button h1 {
+	color: lightcoral;
+	transition-duration: 2s;
 }
 
-@media screen and (max-width: 780px) {
-	.quotes {
-		height: 100%;
-		width: 100%;
-		margin: 50px auto;
-	}
-	
-	h1 {
-		padding: 10px;
-		text-align: center;
-		font-size: 200%;
-	}
-	
-	p {
-		padding: 10px;
-		font-size: 100%;
-	}
+button:hover {
+	background-color: rgba(0,0,0,0.5);
+}
+
+.flat-btn {
+	width: 100%;
 }
