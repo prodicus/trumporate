@@ -48,5 +48,6 @@ button:hover {
 }
 
 .flat-btn {
-	width: 100%;
+	margin: auto;
+	width: 60%;
 }
