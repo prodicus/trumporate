@@ -20,11 +20,12 @@ h1 {
 	overflow: scroll;
 }
 
-.quotes h1 {
-	color: black;
+.quotes p {
+	font-size: 100%;
+	text-align: justify;
 }
 
-.quotes blockquote {
+.quotes div {
 	text-align: right;
 }
 
@@ -39,11 +40,12 @@ button {
 }
 
 button h1 {
+	font-size: 2vw;
 	color: lightcoral;
-	transition-duration: 2s;
 }
 
 button:hover {
+	border: solid 1px rgb(0,0,0);
 	background-color: rgba(0,0,0,0.5);
 }
 
