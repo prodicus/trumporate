@@ -1,55 +1,53 @@
 body {
-	font-family: 'Oswald', sans-serif;
-	text-align: center;
-	background: url("../img/Blackboard_Chalkboard_Wipemarks_UV_CM_1.jpg");
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
+	font-family: 'Playfair Display', serif;
+	text-align: left;
 	padding: 5%;
+	background: grey;
 }
 
-h1 {
-	color: lightcoral;
+p {
+	color: white;
+	font-size: 100%;
 }
 
 .quotes {
-	background-color: rgba(255,255,255,0.6);
-	padding: 5%;
-	width: 50%;
-	margin: auto;
+	width: 80%;
 	overflow: scroll;
 }
 
-.quotes p {
-	font-size: 100%;
+.quotes h1 {
+	font-size: 180%;
+	color: black;
 	text-align: justify;
 }
 
-.quotes div {
-	text-align: right;
+a {
+	color: white;
+	text-decoration: none;
 }
 
-button {
+.flat-btn a {
 	display: inline-block;
-	height: 20%;
-	width: 30%;
+	padding-right: 5%;
+	height: auto;
+	width: auto;
 	margin: auto;
-	background: rgba(0,0,0,0);
-	border: solid 1px lightcoral;
-	transition-duration: 2s;
-}
-
-button h1 {
-	font-size: 2vw;
-	color: lightcoral;
-}
-
-button:hover {
-	border: solid 1px rgb(0,0,0);
-	background-color: rgba(0,0,0,0.5);
+	color: white;
 }
 
 .flat-btn {
-	margin: auto;
-	width: 60%;
+	width: 80%;
+}
+
+.footer {
+	font-family: monospace;
+	font-size: 80%;
+	text-align: center;
+	color: white;
+	background: rgba(0,0,0,0.1);
+	margin-top: 10%;
+	left: 0;
+	bottom: 0;
+	position: fixed;
+	width: 100%;
 }
