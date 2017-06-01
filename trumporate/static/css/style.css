@@ -1,0 +1,53 @@
+body {
+	font-family: 'Playfair Display', serif;
+	text-align: left;
+	padding: 5%;
+	background: grey;
+}
+
+p {
+	color: white;
+	font-size: 100%;
+}
+
+.quotes {
+	width: 80%;
+	overflow: scroll;
+}
+
+.quotes h1 {
+	font-size: 180%;
+	color: black;
+	text-align: justify;
+}
+
+a {
+	color: white;
+	text-decoration: none;
+}
+
+.flat-btn a {
+	display: inline-block;
+	padding-right: 5%;
+	height: auto;
+	width: auto;
+	margin: auto;
+	color: white;
+}
+
+.flat-btn {
+	width: 80%;
+}
+
+.footer {
+	font-family: monospace;
+	font-size: 80%;
+	text-align: center;
+	color: white;
+	background: rgba(0,0,0,0.1);
+	margin-top: 10%;
+	left: 0;
+	bottom: 0;
+	position: fixed;
+	width: 100%;
+}
