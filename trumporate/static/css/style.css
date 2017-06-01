@@ -1,22 +1,23 @@
 body {
 	font-family: 'Playfair Display', serif;
 	text-align: left;
+	margin: 0;
 	padding: 5%;
 	background: grey;
 }
 
 p {
 	color: white;
-	font-size: 100%;
+	font-size: 5vmax;
+	text-shadow: -1px 0 rgba(0,0,0,0.2), 0 1px rgba(0,0,0,0.2), 1px 0 rgba(0,0,0,0.2), 0 -1px rgba(0,0,0,0.2);
 }
 
 .quotes {
 	width: 80%;
-	overflow: scroll;
 }
 
 .quotes h1 {
-	font-size: 180%;
+	font-size: 3vmin;
 	color: black;
 	text-align: justify;
 }
@@ -33,6 +34,7 @@ a {
 	width: auto;
 	margin: auto;
 	color: white;
+	text-shadow: -1px 0 rgba(0,0,0,0.2), 0 1px rgba(0,0,0,0.2), 1px 0 rgba(0,0,0,0.2), 0 -1px rgba(0,0,0,0.2);
 }
 
 .flat-btn {
@@ -41,7 +43,6 @@ a {
 
 .footer {
 	font-family: monospace;
-	font-size: 80%;
 	text-align: center;
 	color: white;
 	background: rgba(0,0,0,0.1);
@@ -50,4 +51,8 @@ a {
 	bottom: 0;
 	position: fixed;
 	width: 100%;
+}
+
+.footer p {
+	font-size: 1.6vmin;
 }
