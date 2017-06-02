@@ -1,6 +1,5 @@
 body {
-	font-family: 'Playfair Display', serif;
-	text-align: left;
+	text-align: center;
 	margin: 0;
 	padding: 5%;
 	background: grey;
@@ -8,18 +7,25 @@ body {
 
 p {
 	color: white;
-	font-size: 5vmax;
 	text-shadow: -1px 0 rgba(0,0,0,0.2), 0 1px rgba(0,0,0,0.2), 1px 0 rgba(0,0,0,0.2), 0 -1px rgba(0,0,0,0.2);
 }
 
+#header {
+	font-size: 5vmax;
+	font-family: 'Pacifico', cursive;
+	margin: auto;
+}
+
 .quotes {
-	width: 80%;
+	margin: 0 auto;
+	width: 50%;
 }
 
 .quotes h1 {
+	font-family: 'Domine', serif;
 	font-size: 3vmin;
 	color: black;
-	text-align: justify;
+	text-align: center;
 }
 
 a {
@@ -29,16 +35,14 @@ a {
 
 .flat-btn a {
 	display: inline-block;
-	padding-right: 5%;
-	height: auto;
-	width: auto;
-	margin: auto;
+	padding: 1%;
+	margin: 0 auto;
 	color: white;
 	text-shadow: -1px 0 rgba(0,0,0,0.2), 0 1px rgba(0,0,0,0.2), 1px 0 rgba(0,0,0,0.2), 0 -1px rgba(0,0,0,0.2);
 }
 
 .flat-btn {
-	width: 80%;
+	width: 100%;
 }
 
 .footer {

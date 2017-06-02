@@ -12,6 +12,6 @@
   		document.body.style.WebkitTransition = "all 2s ease";
 	}
 	
-	setInterval(bg_gen, 5000);
+	setInterval(bg_gen, 3000);
 	
 })();
