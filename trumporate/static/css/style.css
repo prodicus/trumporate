@@ -17,14 +17,14 @@ p {
 }
 
 .quotes {
-	margin: 5% auto;
+	margin: 10% auto;
 	width: 50%;
 }
 
 .quotes h1 {
 	font-family: 'Domine', serif;
 	font-size: 3vmin;
-	color: black;
+	color: rgb(80,80,80);
 	text-align: center;
 }
 
@@ -33,9 +33,12 @@ a {
 	text-decoration: none;
 }
 
-.flat-btn a {
+.flat-btn button,.flat-btn a {
+	text-decoration: none;
+	border: none;
+	background-color: rgb(132,208,231);
 	display: inline-block;
-	padding: 1%;
+	padding: 2%;
 	margin: 0 auto;
 	color: white;
 	text-shadow: -1px 0 rgba(0,0,0,0.2), 0 1px rgba(0,0,0,0.2), 1px 0 rgba(0,0,0,0.2), 0 -1px rgba(0,0,0,0.2);
