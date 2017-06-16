@@ -19,10 +19,6 @@ def index():
 
 @app.route('/api/v1/trump/rant/')
 def return_rant():
-    # TODO:
-    # This actually makes the logic slower, as mentioned. Will have to
-    # shift it to a DB.
-
     with open(CORPUS_FILE_PATH, 'r') as file:
         rants_dict = json.load(file)
 

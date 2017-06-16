@@ -3,15 +3,19 @@
 Post random rants by Donald Trump found based on what he has spoken on and around the internet and his speeches. Uses
 [markovipy](https://github.com/prodicus/markovipy) in the background to generate sentences using Markov chains.
 
+[![Trumporate Demo](http://i.imgur.com/EHTzptn.png)](https://github.com/prodicus/trumporate)
+
+
 ## TODO
 
 - [x] Expose on API endpoint on top of which the UI should be built
 - [x] Push it to ec2 instance on AWS (sorry Digital Ocean)
 - [x] Reproducible infra (ansible)
-- [ ] A pretty Logo. Will give back the attribution to you on the website :)
-- [ ] Initial UI
+- [x] A pretty Logo. Will give back the attribution to you on the website :)
+- [x] Initial UI
+- [x] ~~Shift the frequency generation inside a DB for persistence. The bottleneck as of now~~ Shifted it to a flat file.
+- [ ] Mobile friendly UI
 - [ ] TDD
-- [ ] Shift the frequency generation inside a DB for persistence. The bottleneck as of now
 
 ## Running it
 
