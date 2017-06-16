@@ -1,0 +1,65 @@
+body {
+	text-align: center;
+	margin: 0;
+	padding: 5%;
+	background-color: rgb(132,208,231);
+}
+
+p {
+	color: white;
+	text-shadow: -1px 0 rgba(0,0,0,0.2), 0 1px rgba(0,0,0,0.2), 1px 0 rgba(0,0,0,0.2), 0 -1px rgba(0,0,0,0.2);
+}
+
+#header {
+	font-size: 5vmax;
+	font-family: 'Pacifico', cursive;
+	margin: auto;
+}
+
+.quotes {
+	margin: 10% auto;
+	width: 50%;
+}
+
+.quotes h1 {
+	font-family: 'Domine', serif;
+	font-size: 3vmin;
+	color: rgb(80,80,80);
+	text-align: center;
+}
+
+a {
+	color: white;
+	text-decoration: none;
+}
+
+.flat-btn button,.flat-btn a {
+	text-decoration: none;
+	border: none;
+	background-color: rgb(132,208,231);
+	display: inline-block;
+	padding: 2%;
+	margin: 0 auto;
+	color: white;
+	text-shadow: -1px 0 rgba(0,0,0,0.2), 0 1px rgba(0,0,0,0.2), 1px 0 rgba(0,0,0,0.2), 0 -1px rgba(0,0,0,0.2);
+}
+
+.flat-btn {
+	width: 100%;
+}
+
+.footer {
+	font-family: monospace;
+	text-align: center;
+	color: white;
+	background: rgba(0,0,0,0.1);
+	margin-top: 10%;
+	left: 0;
+	bottom: 0;
+	position: fixed;
+	width: 100%;
+}
+
+.footer p {
+	font-size: 1.6vmin;
+}
