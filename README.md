@@ -3,7 +3,7 @@
 Post random rants by Donald Trump found based on what he has spoken on and around the internet and his speeches. Uses
 [markovipy](https://github.com/prodicus/markovipy) in the background to generate sentences using Markov chains.
 
-[![Trumporate Demo](http://i.imgur.com/EHTzptn.png)](https://github.com/prodicus/trumporate)
+[![Trumporate Demo](https://user-images.githubusercontent.com/20974909/27253726-7fc5b6da-5397-11e7-93e1-acab8c5b2f5a.jpg)](https://github.com/prodicus/trumporate)
 
 
 ## TODO
