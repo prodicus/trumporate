@@ -1,7 +1,8 @@
 body {
 	text-align: center;
-	margin: 0;
-	padding: 5%;
+	max-width: 720px;
+	margin: auto;
+	padding: 10px;
 	background-color: rgb(200, 242, 255);
 }
 
@@ -10,23 +11,54 @@ p {
 }
 
 #header {
-	font-size: 5vmax;
+	font-size: 62px;
 	font-family: 'Pacifico', cursive;
 	font-weight: 300;
 	margin: auto;
 	color: #2c6182;
+	margin-top: 15%;
 }
 
 .quotes {
-	margin: 10% auto;
-	width: 50%;
+	margin: 20% 0;
 }
 
 .quotes h1 {
 	font-family: 'Domine', serif;
-	font-size: 3vmin;
+	font-size: 22px;
+	line-height: 1.6;
 	color: rgb(80,80,80);
 	text-align: center;
+}
+
+@media (min-width: 768px) {
+	#header {
+		font-size: 85px;
+	}
+
+	.quotes {
+		margin: 15% 0;
+	}
+
+	.quotes h1 {
+		font-size: 28px;
+	}
+}
+
+@media (min-width: 1020px) {
+	#header {
+		font-size: 100px;
+		margin-top: 6%;
+		margin-bottom: 14%;
+	}
+
+	.quotes {
+		margin: 10% 0;
+	}
+	
+	.quotes h1 {
+		font-size: 32px;
+	}
 }
 
 .flat-btn button,.flat-btn a {
@@ -54,10 +86,6 @@ p {
 	bottom: 0;
 	position: fixed;
 	width: 100%;
-}
-
-.footer p {
-	font-size: 1.6vmin;
 }
 
 .footer > p > a {
