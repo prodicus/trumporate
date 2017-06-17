@@ -27,7 +27,7 @@
 	
 	//open twitter-share in new tab
 	$('.tweet_this').click(function(event) {
-    var width  = 575,
+    	var width  = 575,
         height = 400,
         left   = ($(window).width()  - width)  / 2,
         top    = ($(window).height() - height) / 2,
