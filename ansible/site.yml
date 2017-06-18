@@ -5,3 +5,5 @@
     - role: provision
     - role: systemd
     - role: nginx
+    # - role: deploy  # enable this after you have to update the server code
+  

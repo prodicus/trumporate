@@ -1,0 +1,10 @@
+---
+- name: Update /var/opt/trumporate to latest commit in master
+  git:
+    repo: 'https://github.com/prodicus/trumporate'
+    dest: /var/opt/trumporate
+    update: yes
+
+- name: Restart the systemd service named trumporate to serve the latest commit
+  become: true
+  command: systemctl restart trumporate.service
