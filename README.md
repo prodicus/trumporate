@@ -14,7 +14,10 @@ Post random rants by Donald Trump found based on what he has spoken on and aroun
 - [x] A pretty Logo. Will give back the attribution to you on the website :)
 - [x] Initial UI
 - [x] ~~Shift the frequency generation inside a DB for persistence. The bottleneck as of now~~ Shifted it to a flat file.
-- [ ] Mobile friendly UI
+- [x] Mobile friendly UI
+- [x] Share rants on Twitter
+- [ ] Domain registration
+- [ ] Fix SSL stuff
 - [ ] TDD
 
 ## Running it
