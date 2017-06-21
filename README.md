@@ -1,5 +1,7 @@
 # Trumporate
 
+[![Build status](https://api.travis-ci.org/prodicus/trumporate.svg)](https://travis-ci.org/prodicus/trumporate/)
+
 Post random rants by Donald Trump found based on what he has spoken on and around the internet and his speeches. Uses
 [markovipy](https://github.com/prodicus/markovipy) in the background to generate sentences using Markov chains.
 
@@ -18,7 +20,9 @@ Post random rants by Donald Trump found based on what he has spoken on and aroun
 - [x] Share rants on Twitter
 - [ ] Domain registration
 - [ ] Fix SSL stuff
-- [ ] TDD
+- [x] Basic Tests
+- [ ] Dockerize the app
+- [ ] Setup CI/CD pipeline
 
 ## Running it
 
