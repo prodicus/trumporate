@@ -4,9 +4,9 @@ python:
   - "3.6.0"
 
 before_script:
+  - pip install -r requirements-test.txt
   - "make run-test-env-background"  # run dev flask server
   - sleep 5  # give Web server some time to bind to sockets, etc
-  - pip install -r requirements-test.txt
 
 script: make test-api
 

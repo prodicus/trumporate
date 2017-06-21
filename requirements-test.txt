@@ -1,3 +1,5 @@
-requests
-Flask
-pytest
+requests==2.18.1
+Flask==0.12.2
+pytest==3.1.2
+markovipy==0.3.0 
+gunicorn==19.7.1
