@@ -14,8 +14,8 @@ from trumporate.wsgi import app
 
 from trumporate.api.v1.utils import CORPUS_FILE_PATH
 
+API_BASE_URL = 'http://localhost:5000/'
 
-API_BASE_URL = "http://localhost:5000/"
 
 class TestApp:
     def test_trump_index_page(self):
@@ -28,7 +28,7 @@ class TestApp:
             rants_dict = json.load(file)
         response = \
             requests.get(urljoin(API_BASE_URL, 'api/v1/trump/rant/'),
-                        headers={'content-type': 'application/json'})
+                         headers={'content-type': 'application/json'})
         assert response.status_code == 200
         assert response.headers['Content-Type'] == 'application/json'
         assert response.json()['rant'] in rants_dict.values()
@@ -36,5 +36,5 @@ class TestApp:
     def test_trump_404(self):
         response = \
             requests.get(urljoin(API_BASE_URL, 'unknownroute/'),
-                        headers={'content-type': 'application/json'})
+                         headers={'content-type': 'application/json'})
         assert response.status_code == 404

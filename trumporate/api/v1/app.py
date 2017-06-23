@@ -12,10 +12,12 @@ from trumporate.api.v1.utils import CORPUS_FILE_PATH
 
 app = Flask(__name__)
 
+
 @app.route('/')
 @app.route('/index')
 def index():
     return render_template('index.html', title='Home')
+
 
 @app.route('/api/v1/trump/rant/')
 def return_rant():
