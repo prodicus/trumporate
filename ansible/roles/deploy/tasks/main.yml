@@ -1,7 +1,7 @@
 ---
 - name: Update /var/opt/trumporate to latest commit in master
   git:
-    repo: 'https://github.com/prodicus/trumporate'
+    repo: 'https://github.com/tasdikrahman/trumporate'
     dest: /var/opt/trumporate
     update: yes
 
