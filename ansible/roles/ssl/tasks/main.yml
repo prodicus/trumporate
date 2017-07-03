@@ -1,0 +1,59 @@
+---
+- name: add certbot ppa
+  become: true
+  apt_repository:
+    repo: ppa:certbot/certbot
+
+- name: install certbot
+  become: true
+  apt:
+    pkg: certbot
+    state: latest
+
+# Generate a dhgroup for ssl, one is shared for all
+- name: check if dh group already generated
+  stat:
+    path: /etc/ssl/certs/dhparam.pem
+  register: dhparam
+
+- name: generate dh group
+  become: true
+  raw: openssl dhparam -out /etc/ssl/certs/dhparam.pem 2048
+  when: not dhparam.stat.exists
+
+# generate the ssl certs
+- name: check if ssl certs for {{ site_domain }} are already generated
+  stat:
+    path: /etc/letsencrypt/live/{{ site_domain }}/fullchain.pem
+  register: fullchain
+
+- name: stop nginx
+  become: true
+  service:
+    name: nginx.service
+    state: stopped
+  when: not fullchain.stat.exists
+
+# make sure the port 443 is open on the server for all incoming requests
+- name: generate ssl certificates for {{ site_domain }}
+  become: true
+  raw: certbot certonly --standalone --email {{ letsencrypt_email }}
+       --agree-tos -n -d {{ site_domain }},www.{{ site_domain }}
+  when: not fullchain.stat.exists
+
+# further steps assume that you have already made the site available
+# Always ensure nginx is reloaded, even if no domains changed
+- name: reload nginx
+  become: true
+  service:
+    name: nginx.service
+    state: reloaded
+
+- name: create a cron job to autorenew all ssl certificates
+  become: true
+  cron:
+    name: auto renew the ssl certificates
+    minute: 1
+    hour: 23
+    weekday: 0
+    job: '/usr/bin/certbot renew --quiet --renew-hook "/usr/sbin/service nginx reload"'

@@ -1,8 +1,8 @@
 ---
 - name: Copying the nginx config file for trumporate to /etc/nginx/sites-available/trumporate
   become: true
-  copy:
-    src: trumporate.nginx-conf
+  template:
+    src: etc/nginx/sites-available/trumporate.j2
     dest: /etc/nginx/sites-available/trumporate
     owner: root
     group: root
@@ -17,8 +17,3 @@
     owner: root
     group: root
     mode: u=rwx,g=rwx,o=rwx
-
-- name: Restart nginx
-  become: true
-  shell: |
-    systemctl restart nginx

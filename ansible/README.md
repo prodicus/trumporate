@@ -17,21 +17,21 @@ backend
 web_server ansible_ssh_host=ip_address ansible_ssh_user=youruser ansible_ssh_private_key_file=/path/to/pemfile.pem
 $
 $ # edit inventory to replace "ip_address", "youruser", "/path/to/pemfile.pem" with your values
-$
-$ cp roles/nginx/files/trumporate.nginx-conf.example roles/nginx/files/trumporate.nginx-conf
-$ cat trumporate.nginx-conf
-server {
-    listen 80;
-    server_name public_ip_address;
-
-    location / {
-        include proxy_params;
-	proxy_redirect off;
-        proxy_pass http://127.0.0.1:5000;
-    }
-}
-$
-$ # replace "public_ip_address" with your server's public IP/domain name
+$ 
+$ cat site.yml 
+---
+- hosts: trumporate
+  vars:
+    username: ubuntu
+    site_domain: trumporate.com
+    letsencrypt_email: example@gmail.com
+  roles:
+    - role: install_packages
+    - role: provision
+    - role: systemd
+    - role: nginx
+    - role: ssl
+    # - role: deploy  # enable this after you have to update the server code
 ```
 
 ## Actually running it
